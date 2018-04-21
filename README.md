@@ -10,8 +10,8 @@ This will enable the use of git to source control static pages much more easily,
 
 ### Goals:
 
-[] Upload entire directory of files (maintaining structure) to S3 bucket
-[] Auto-deploy option for most recent commit (pre/post-commit hooks?)
-[] Preview website locally with SimpleHTTPServer automatically
-[] 'Deploy' button on preview page
+[] Upload entire directory of files (maintaining structure) to S3 bucket  
+[] Auto-deploy option for most recent commit (pre/post-commit hooks?)  
+[] Preview website locally with SimpleHTTPServer automatically  
+[] 'Deploy' button on preview page  
 [] Ability to rollback live site to any commit
