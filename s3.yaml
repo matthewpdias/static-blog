@@ -1,0 +1,9 @@
+---
+bucket: 'matthewpdias.com'
+delimiter: '\n'
+encoding: 'url'
+max_keys: 100
+#Prefix: 'string'
+#ContinuationToken: 'string'
+#FetchOwner: True|False
+#StartAfter: 'string'
