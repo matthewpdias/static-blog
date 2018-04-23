@@ -15,3 +15,10 @@ This will enable the use of git to source control static pages much more easily,
 [] Preview website locally with SimpleHTTPServer automatically  
 [] 'Deploy' button on preview page  
 [] Ability to rollback live site to any commit
+
+
+### How?
+
+The idea is to use the [boto3 AWS sdk](https://boto3.readthedocs.io/en/latest/), which makes it easy to write python3 code for interaction with S3. When doing anything with python packages, I highly recomend using a [virtualenv](https://virtualenv.pypa.io/en/stable/) as it makes life much nicer. Included in this repo is a requirements.txt file, so you can `pip install -r requirements.txt` with your activated virtualenv to easily get all of the required packages.
+
+Additionally you'll need the AWS CLI credentials ready and availiable on your host, either in environment variables or passed to the client in your script. I'l be using environment variables, as I use the AWS CLI a lot, but you're free to do as you wish. More information is availiable [on boto3 credentials](http://boto3.readthedocs.io/en/latest/guide/configuration.html) and the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
