@@ -11,7 +11,7 @@ cwd = os.getcwd()
 def add_button():
     try:
         with open("index.html", 'a') as file:
-            file.write('<a href="cgi-bin/update.py"> publish </a>')
+            file.write('<center><a href="cgi-bin/update.py"><button style="border-radius: 12px; color: red;"> publish </button></a></center>')
     except:
         print("no index.html file found, shutting server down")
         exit(1)
@@ -25,7 +25,7 @@ def trim_button():
     w.close()
 
 def cpy_scripts():
-    subprocess.call(['cp', '/Users/liatrio/Documents/Personal-Projects/static-blog/cgi-bin', 'cgi-bin'])
+    subprocess.call(['cp', '-r', '/Users/liatrio/Documents/Personal-Projects/static-blog/cgi-bin', 'cgi-bin'])
 
 def remove_scripts():
     subprocess.call(['rm', '-rf', 'cgi-bin/'])
